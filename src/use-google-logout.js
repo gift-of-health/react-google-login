@@ -12,7 +12,7 @@ const useGoogleLogout = ({
   discoveryDocs,
   uxMode,
   redirectUri,
-  scope,
+  logoutScope,
   accessType,
   onLogoutSuccess
 }) => {
@@ -38,7 +38,7 @@ const useGoogleLogout = ({
         discoveryDocs,
         ux_mode: uxMode,
         redirect_uri: redirectUri,
-        scope,
+        scope: logoutScope,
         access_type: accessType
       }
       window.gapi.load('auth2', () => {
