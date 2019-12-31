@@ -14,7 +14,7 @@ const useGoogleLogin = ({
   discoveryDocs,
   onFailure,
   uxMode,
-  scope,
+  loginScope,
   accessType,
   responseType,
   jsSrc,
@@ -73,7 +73,7 @@ const useGoogleLogin = ({
         discoveryDocs,
         ux_mode: uxMode,
         redirect_uri: redirectUri,
-        scope,
+        scope: loginScope,
         access_type: accessType
       }
 
